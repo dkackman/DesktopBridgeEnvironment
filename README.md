@@ -1,3 +1,4 @@
+
 # DesktopBridgeEnvironment
 Library that helps a Desktop Bridge application run both as a package and regular exe.
 
@@ -26,6 +27,7 @@ And then elsewhere in the app:
         if (ExecutionEnvironment.Current.IsUwp)
         {
             // do uwp form load stuff
+            
             if (ExecutionEnvironment.Current.StartupArgs != null && ExecutionEnvironment.Current.StartupArgs.Length > 0)
             {
                 // process Uwp notification message
