@@ -9,6 +9,7 @@ A Desktop Bridge exe doesn't share the same Launch.Suspend semantics as a UWP ap
     {
         using (var instance = new SingleInstance(ExecutionEnvironment.Current.AppId))
         {
+            // make sure we are the only instance running before doing anything.
             if (instance.IsFirstInstance)
             {
                 ExecutionEnvironment.Current.StartupArgs = args;
