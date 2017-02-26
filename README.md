@@ -25,19 +25,17 @@ And then elsewhere in the app:
     {
         if (ExecutionEnvironment.Current.IsUwp)
         {
+            // do uwp form load stuff
             if (ExecutionEnvironment.Current.StartupArgs != null && ExecutionEnvironment.Current.StartupArgs.Length > 0)
             {
                 // process Uwp notification message
-            }
-            else if (ExecutionEnvironment.Current.IsUwp && Settings.Default.ShowIconHelperToast)
-            {
-                // do Uwp form load stuff
-            }
-            else
-            {
-                // do win32 form load stuff
-            }
-            base.OnLoad(e);
+            }            
         }
+        else
+        {
+            // do win32 form load stuff
+        }
+        
+        base.OnLoad(e);       
     }
 
