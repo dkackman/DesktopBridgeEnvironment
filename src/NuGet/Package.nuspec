@@ -13,7 +13,7 @@
 1.0.0-alpha1
     </releaseNotes>
     <summary>
-      Extensions that add simple statistical methods
+      Classes to help a Desktop Bridge application run both as a package and regular exe.
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/dkackman/DesktopBridgeEnvironment</projectUrl>
